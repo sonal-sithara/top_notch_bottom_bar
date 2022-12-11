@@ -4,6 +4,9 @@ A beautiful and animated bottom navigation bar. also you are free to customize i
 
 ## Preview
 
+![](https://github.com/sonal-sithara/top_notch_bottom_bar/blob/master/images/gif_1.gif) 
+![](https://github.com/sonal-sithara/top_notch_bottom_bar/blob/master/images/gif_2.gif)
+
 ## Customization
 
 ### TopNotchBottomBar
