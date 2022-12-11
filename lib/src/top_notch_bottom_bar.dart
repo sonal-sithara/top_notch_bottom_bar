@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'constants/text_style.dart';
-import 'data/animated_bottom_nav_bar_item.dart';
+import 'data/top_notch_bottom_bar_item.dart';
 import 'widgets/custom_paint.dart';
 
 class TopNotchBottomBar extends StatefulWidget {

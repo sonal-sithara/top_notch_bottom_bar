@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:top_notch_bottom_bar/animated_bottom_nav_bar.dart';
+import 'package:top_notch_bottom_bar/top_notch_bottom_bar.dart';
 
 void main() {
   runApp(const MyApp());
