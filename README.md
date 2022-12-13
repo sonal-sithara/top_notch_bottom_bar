@@ -48,7 +48,7 @@ Add the dependency in `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  top_notch_bottom_bar: ^0.0.1
+  top_notch_bottom_bar: ^0.1.0
 ```
 
 ## Basic Usage
