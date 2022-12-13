@@ -4,7 +4,7 @@ A beautiful and animated bottom navigation bar. also you are free to customize i
 
 ## Preview
 
-![](https://github.com/sonal-sithara/top_notch_bottom_bar/blob/master/images/gif_1.gif) 
+![](https://github.com/sonal-sithara/top_notch_bottom_bar/blob/master/images/gif_1.gif)
 ![](https://github.com/sonal-sithara/top_notch_bottom_bar/blob/master/images/gif_2.gif)
 
 ## Customization
@@ -27,6 +27,8 @@ A beautiful and animated bottom navigation bar. also you are free to customize i
 - `showElevation` - if false the bottom bar elevation will be removed
 - `animationDuration` - time duration for the notch and text animation
 - `initialIndex` - set initial selected item
+- `showCurvedBar` - if false the bottom bar curve will be removed
+- `showCurvedBarAnimation` - if false the bottom bar curve animation will be removed
 
 ### TopNotchItem
 

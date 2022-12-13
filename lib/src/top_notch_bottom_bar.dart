@@ -15,6 +15,8 @@ class TopNotchBottomBar extends StatefulWidget {
   final bool? showElevation;
   final Color? backgroundColor;
   final Duration? animationDuration;
+  final bool? showCurvedBar;
+  final bool? showCurvedBarAnimation;
 
   const TopNotchBottomBar({
     Key? key,
@@ -29,6 +31,8 @@ class TopNotchBottomBar extends StatefulWidget {
     this.activeColor = const Color.fromARGB(255, 39, 153, 247),
     this.inActiveColor = const Color.fromARGB(255, 150, 150, 150),
     this.showLabel = true,
+    this.showCurvedBar = true,
+    this.showCurvedBarAnimation = true,
   }) : super(key: key);
 
   @override
@@ -60,11 +64,17 @@ class _TopNotchBottomBarState extends State<TopNotchBottomBar> {
               offset: const Offset(0, 3), // changes position of shadow
             ),
         ],
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(index == 0 ? 0.0 : 20.0),
-          topRight:
-              Radius.circular(index == widget.items.length - 1 ? 0.0 : 20.0),
-        ),
+        borderRadius: widget.showCurvedBar!
+            ? BorderRadius.only(
+                topLeft: widget.showCurvedBarAnimation!
+                    ? Radius.circular(index == 0 ? 0.0 : 20.0)
+                    : const Radius.circular(20.0),
+                topRight: widget.showCurvedBarAnimation!
+                    ? Radius.circular(
+                        index == widget.items.length - 1 ? 0.0 : 20.0)
+                    : const Radius.circular(20.0),
+              )
+            : const BorderRadius.all(Radius.zero),
       ),
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
         for (int i = 0; i < widget.items.length; i++)
